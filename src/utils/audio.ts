@@ -13,6 +13,19 @@ class SoundManager {
     }
   }
 
+  public toggleMute(mute?: boolean) {
+    if (mute !== undefined) {
+      this.isMuted = mute;
+    } else {
+      this.isMuted = !this.isMuted;
+    }
+    return this.isMuted;
+  }
+
+  public getMuted() {
+    return this.isMuted;
+  }
+
   // Call this on first user interaction to unlock AudioContext
   public resume() {
     if (this.ctx && this.ctx.state === 'suspended') {
