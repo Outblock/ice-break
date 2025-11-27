@@ -69,7 +69,7 @@ const SlotMachine = () => {
   };
 
   const initSpin = () => {
-    if (isSpinning || questions.length === 0) return;
+    if (isSpinning) return;
     soundManager.resume();
     soundManager.playSpinStart();
     setIsSpinning(true);
