@@ -6,6 +6,336 @@
     "category": "FOOD"
   },
   {
+    "en": "Dine out or Home cooking?",
+    "cn": "外出吃饭还是在家做饭？",
+    "emoji": "🍳",
+    "category": "FOOD"
+  },
+  {
+    "en": "Favorite pizza topping?",
+    "cn": "最喜欢的披萨配料？",
+    "emoji": "🍕",
+    "category": "FOOD"
+  },
+  {
+    "en": "Spicy food: Yes or No?",
+    "cn": "辣的食物：吃还是不吃？",
+    "emoji": "🌶️",
+    "category": "FOOD"
+  },
+  {
+    "en": "Favorite ice cream flavor?",
+    "cn": "最喜欢的冰淇淋口味？",
+    "emoji": "🍦",
+    "category": "FOOD"
+  },
+  {
+    "en": "Favorite childhood snack?",
+    "cn": "最喜欢的童年零食？",
+    "emoji": "🍭",
+    "category": "FOOD"
+  },
+  {
+    "en": "Favorite drink?",
+    "cn": "最喜欢的饮料？",
+    "emoji": "🍹",
+    "category": "FOOD"
+  },
+  {
+    "en": "Piercings?",
+    "cn": "有穿孔吗？",
+    "emoji": "👂",
+    "category": "FOOD"
+  },
+  {
+    "en": "Favorite fruit?",
+    "cn": "最喜欢的水果？",
+    "emoji": "🍎",
+    "category": "FOOD"
+  },
+  {
+    "en": "Vegetable you hate?",
+    "cn": "最讨厌的蔬菜？",
+    "emoji": "🥦",
+    "category": "FOOD"
+  },
+  {
+    "en": "Sushi: Love or Hate?",
+    "cn": "寿司：爱还是恨？",
+    "emoji": "🍣",
+    "category": "FOOD"
+  },
+  {
+    "en": "Steak: Rare or Well-done?",
+    "cn": "牛排：几分熟？",
+    "emoji": "🥩",
+    "category": "FOOD"
+  },
+  {
+    "en": "Fried chicken or Grilled?",
+    "cn": "炸鸡还是烤鸡？",
+    "emoji": "🍗",
+    "category": "FOOD"
+  },
+  {
+    "en": "Coffee: Black or Milk?",
+    "cn": "咖啡：黑咖还是加奶？",
+    "emoji": "☕",
+    "category": "FOOD"
+  },
+  {
+    "en": "Tea: Green or Black?",
+    "cn": "茶：绿茶还是红茶？",
+    "emoji": "🍵",
+    "category": "FOOD"
+  },
+  {
+    "en": "Breakfast person?",
+    "cn": "吃早餐吗？",
+    "emoji": "🍳",
+    "category": "FOOD"
+  },
+  {
+    "en": "Eggs: Scrambled or Fried?",
+    "cn": "鸡蛋：炒蛋还是煎蛋？",
+    "emoji": "🥚",
+    "category": "FOOD"
+  },
+  {
+    "en": "Orange Juice: Pulp or No Pulp?",
+    "cn": "橙汁：带果肉还是不带？",
+    "emoji": "🍊",
+    "category": "FOOD"
+  },
+  {
+    "en": "Avocado Toast?",
+    "cn": "牛油果吐司？",
+    "emoji": "🥑",
+    "category": "FOOD"
+  },
+  {
+    "en": "Hot Sauce: Mild or Fire?",
+    "cn": "辣酱：微辣还是爆辣？",
+    "emoji": "🌶️",
+    "category": "FOOD"
+  },
+  {
+    "en": "Cilantro: Soap or Yummy?",
+    "cn": "香菜：肥皂味还是美味？",
+    "emoji": "🌿",
+    "category": "FOOD"
+  },
+  {
+    "en": "Olives: Yes or No?",
+    "cn": "橄榄：吃还是不吃？",
+    "emoji": "🫒",
+    "category": "FOOD"
+  },
+  {
+    "en": "Mushrooms?",
+    "cn": "蘑菇？",
+    "emoji": "🍄",
+    "category": "FOOD"
+  },
+  {
+    "en": "Blue Cheese?",
+    "cn": "蓝纹奶酪？",
+    "emoji": "🧀",
+    "category": "FOOD"
+  },
+  {
+    "en": "Wine: Red or White?",
+    "cn": "葡萄酒：红还是白？",
+    "emoji": "🍷",
+    "category": "FOOD"
+  },
+  {
+    "en": "Beer: IPA or Lager?",
+    "cn": "啤酒：IPA 还是拉格？",
+    "emoji": "🍺",
+    "category": "FOOD"
+  },
+  {
+    "en": "Water: Sparkling or Still?",
+    "cn": "水：气泡水还是静水？",
+    "emoji": "💧",
+    "category": "FOOD"
+  },
+  {
+    "en": "Soda: Coke or Pepsi?",
+    "cn": "汽水：可乐还是百事？",
+    "emoji": "🥤",
+    "category": "FOOD"
+  },
+  {
+    "en": "Milkshake flavor?",
+    "cn": "奶昔口味？",
+    "emoji": "🥤",
+    "category": "FOOD"
+  },
+  {
+    "en": "Donut: Glazed or Filled?",
+    "cn": "甜甜圈：糖霜还是夹心？",
+    "emoji": "🍩",
+    "category": "FOOD"
+  },
+  {
+    "en": "Macarons?",
+    "cn": "马卡龙？",
+    "emoji": "🍬",
+    "category": "FOOD"
+  },
+  {
+    "en": "Cookie: Chewy or Crunchy?",
+    "cn": "曲奇：软的还是脆的？",
+    "emoji": "🍪",
+    "category": "FOOD"
+  },
+  {
+    "en": "Chocolate: Dark or Milk?",
+    "cn": "巧克力：黑巧还是牛奶？",
+    "emoji": "🍫",
+    "category": "FOOD"
+  },
+  {
+    "en": "White Chocolate?",
+    "cn": "白巧克力？",
+    "emoji": "🍬",
+    "category": "FOOD"
+  },
+  {
+    "en": "Popcorn: Sweet or Salty?",
+    "cn": "爆米花：甜的还是咸的？",
+    "emoji": "🍿",
+    "category": "FOOD"
+  },
+  {
+    "en": "Chips: Potato or Corn?",
+    "cn": "薯片还是玉米片？",
+    "emoji": "🥔",
+    "category": "FOOD"
+  },
+  {
+    "en": "Dip: Salsa or Guac?",
+    "cn": "蘸酱：莎莎酱还是牛油果酱？",
+    "emoji": "🥣",
+    "category": "FOOD"
+  },
+  {
+    "en": "Pasta shape?",
+    "cn": "意面形状？",
+    "emoji": "🍝",
+    "category": "FOOD"
+  },
+  {
+    "en": "Pizza: Thin or Thick crust?",
+    "cn": "披萨：薄底还是厚底？",
+    "emoji": "🍕",
+    "category": "FOOD"
+  },
+  {
+    "en": "Hot Dog topping?",
+    "cn": "热狗配料？",
+    "emoji": "🌭",
+    "category": "FOOD"
+  },
+  {
+    "en": "BBQ style?",
+    "cn": "烧烤风格？",
+    "emoji": "🍖",
+    "category": "FOOD"
+  },
+  {
+    "en": "Seafood lover?",
+    "cn": "海鲜爱好者？",
+    "emoji": "🦐",
+    "category": "FOOD"
+  },
+  {
+    "en": "Oysters?",
+    "cn": "生蚝？",
+    "emoji": "🦪",
+    "category": "FOOD"
+  },
+  {
+    "en": "Raw fish?",
+    "cn": "生鱼片？",
+    "emoji": "🍱",
+    "category": "FOOD"
+  },
+  {
+    "en": "Curry color?",
+    "cn": "咖喱颜色？",
+    "emoji": "🍛",
+    "category": "FOOD"
+  },
+  {
+    "en": "Tofu: Yay or Nay?",
+    "cn": "豆腐：吃还是不吃？",
+    "emoji": "🧊",
+    "category": "FOOD"
+  },
+  {
+    "en": "Vegan meal?",
+    "cn": "素食餐？",
+    "emoji": "🥗",
+    "category": "FOOD"
+  },
+  {
+    "en": "Gluten free?",
+    "cn": "无麸质？",
+    "emoji": "🌾",
+    "category": "FOOD"
+  },
+  {
+    "en": "Buffet strategy?",
+    "cn": "自助餐策略？",
+    "emoji": "🍽️",
+    "category": "FOOD"
+  },
+  {
+    "en": "Late night snack?",
+    "cn": "深夜零食？",
+    "emoji": "🌙",
+    "category": "FOOD"
+  },
+  {
+    "en": "Favorite cuisine?",
+    "cn": "最喜欢哪国菜？",
+    "emoji": "🌍",
+    "category": "FOOD"
+  },
+  {
+    "en": "Street food?",
+    "cn": "街头小吃？",
+    "emoji": "🍢",
+    "category": "FOOD"
+  },
+  {
+    "en": "Fine dining?",
+    "cn": "高级餐厅？",
+    "emoji": "🥂",
+    "category": "FOOD"
+  },
+  {
+    "en": "Food delivery app?",
+    "cn": "外卖 App？",
+    "emoji": "🛵",
+    "category": "FOOD"
+  },
+  {
+    "en": "Eat Only Pizza or Eat Only Burger?",
+    "cn": "Eat Only Pizza 还是 Eat Only Burger?",
+    "emoji": "🤔",
+    "category": "FOOD"
+  },
+  {
+    "en": "Drink Only Water or Drink Only Soda?",
+    "cn": "Drink Only Water 还是 Drink Only Soda?",
+    "emoji": "🤔",
+    "category": "FOOD"
+  },
+  {
     "en": "If animals could talk, which would be the rudest?",
     "cn": "如果动物会说话，哪一种会最粗鲁？",
     "emoji": "🦙",
@@ -102,12 +432,6 @@
     "category": "DEEP"
   },
   {
-    "en": "Coffee or Tea?",
-    "cn": "咖啡还是茶？",
-    "emoji": "☕",
-    "category": "FOOD"
-  },
-  {
     "en": "Morning bird or Night owl?",
     "cn": "早起鸟还是夜猫子？",
     "emoji": "🦉",
@@ -180,18 +504,6 @@
     "category": "TECH"
   },
   {
-    "en": "Sweet or Savory?",
-    "cn": "甜口还是咸口？",
-    "emoji": "🥨",
-    "category": "FOOD"
-  },
-  {
-    "en": "Dine out or Home cooking?",
-    "cn": "外出吃饭还是在家做饭？",
-    "emoji": "🍳",
-    "category": "FOOD"
-  },
-  {
     "en": "Worst job you ever had?",
     "cn": "你做过最糟糕的工作？",
     "emoji": "💼",
@@ -232,12 +544,6 @@
     "cn": "最常用的表情包？",
     "emoji": "😂",
     "category": "FUN"
-  },
-  {
-    "en": "Favorite pizza topping?",
-    "cn": "最喜欢的披萨配料？",
-    "emoji": "🍕",
-    "category": "FOOD"
   },
   {
     "en": "Toilet paper: Over or Under?",
@@ -288,18 +594,6 @@
     "category": "LIFE"
   },
   {
-    "en": "Spicy food: Yes or No?",
-    "cn": "辣的食物：吃还是不吃？",
-    "emoji": "🌶️",
-    "category": "FOOD"
-  },
-  {
-    "en": "Favorite ice cream flavor?",
-    "cn": "最喜欢的冰淇淋口味？",
-    "emoji": "🍦",
-    "category": "FOOD"
-  },
-  {
     "en": "Have you ever broken a bone?",
     "cn": "你骨折过吗？",
     "emoji": "🦴",
@@ -348,34 +642,10 @@
     "category": "LIFE"
   },
   {
-    "en": "Cake or Pie?",
-    "cn": "蛋糕还是派？",
-    "emoji": "🍰",
-    "category": "FOOD"
-  },
-  {
-    "en": "Pancakes or Waffles?",
-    "cn": "薄饼还是华夫饼？",
-    "emoji": "🥞",
-    "category": "FOOD"
-  },
-  {
-    "en": "Burgers or Tacos?",
-    "cn": "汉堡还是塔可？",
-    "emoji": "🍔",
-    "category": "FOOD"
-  },
-  {
     "en": "Sunrise or Sunset?",
     "cn": "日出还是日落？",
     "emoji": "🌅",
     "category": "LIFE"
-  },
-  {
-    "en": "Favorite childhood snack?",
-    "cn": "最喜欢的童年零食？",
-    "emoji": "🍭",
-    "category": "FOOD"
   },
   {
     "en": "Do you collect anything?",
@@ -486,22 +756,10 @@
     "category": "LIFE"
   },
   {
-    "en": "Favorite drink?",
-    "cn": "最喜欢的饮料？",
-    "emoji": "🍹",
-    "category": "FOOD"
-  },
-  {
     "en": "Do you have a tattoo?",
     "cn": "你有纹身吗？",
     "emoji": "🐉",
     "category": "LIFE"
-  },
-  {
-    "en": "Piercings?",
-    "cn": "有穿孔吗？",
-    "emoji": "👂",
-    "category": "FOOD"
   },
   {
     "en": "Beard or Clean shaven?",
@@ -520,42 +778,6 @@
     "cn": "戴眼镜还是隐形？",
     "emoji": "👓",
     "category": "LIFE"
-  },
-  {
-    "en": "Favorite fruit?",
-    "cn": "最喜欢的水果？",
-    "emoji": "🍎",
-    "category": "FOOD"
-  },
-  {
-    "en": "Vegetable you hate?",
-    "cn": "最讨厌的蔬菜？",
-    "emoji": "🥦",
-    "category": "FOOD"
-  },
-  {
-    "en": "Sushi: Love or Hate?",
-    "cn": "寿司：爱还是恨？",
-    "emoji": "🍣",
-    "category": "FOOD"
-  },
-  {
-    "en": "Steak: Rare or Well-done?",
-    "cn": "牛排：几分熟？",
-    "emoji": "🥩",
-    "category": "FOOD"
-  },
-  {
-    "en": "Fried chicken or Grilled?",
-    "cn": "炸鸡还是烤鸡？",
-    "emoji": "🍗",
-    "category": "FOOD"
-  },
-  {
-    "en": "Chocolate or Vanilla?",
-    "cn": "巧克力还是香草？",
-    "emoji": "🍫",
-    "category": "FOOD"
   },
   {
     "en": "Gold or Silver?",
@@ -1018,306 +1240,6 @@
     "cn": "黑客马拉松经历？",
     "emoji": "🏆",
     "category": "TECH"
-  },
-  {
-    "en": "Coffee: Black or Milk?",
-    "cn": "咖啡：黑咖还是加奶？",
-    "emoji": "☕",
-    "category": "FOOD"
-  },
-  {
-    "en": "Tea: Green or Black?",
-    "cn": "茶：绿茶还是红茶？",
-    "emoji": "🍵",
-    "category": "FOOD"
-  },
-  {
-    "en": "Breakfast person?",
-    "cn": "吃早餐吗？",
-    "emoji": "🍳",
-    "category": "FOOD"
-  },
-  {
-    "en": "Cereal or Toast?",
-    "cn": "麦片还是吐司？",
-    "emoji": "🥣",
-    "category": "FOOD"
-  },
-  {
-    "en": "Eggs: Scrambled or Fried?",
-    "cn": "鸡蛋：炒蛋还是煎蛋？",
-    "emoji": "🥚",
-    "category": "FOOD"
-  },
-  {
-    "en": "Bacon or Sausage?",
-    "cn": "培根还是香肠？",
-    "emoji": "🥓",
-    "category": "FOOD"
-  },
-  {
-    "en": "Orange Juice: Pulp or No Pulp?",
-    "cn": "橙汁：带果肉还是不带？",
-    "emoji": "🍊",
-    "category": "FOOD"
-  },
-  {
-    "en": "Avocado Toast?",
-    "cn": "牛油果吐司？",
-    "emoji": "🥑",
-    "category": "FOOD"
-  },
-  {
-    "en": "Hot Sauce: Mild or Fire?",
-    "cn": "辣酱：微辣还是爆辣？",
-    "emoji": "🌶️",
-    "category": "FOOD"
-  },
-  {
-    "en": "Cilantro: Soap or Yummy?",
-    "cn": "香菜：肥皂味还是美味？",
-    "emoji": "🌿",
-    "category": "FOOD"
-  },
-  {
-    "en": "Olives: Yes or No?",
-    "cn": "橄榄：吃还是不吃？",
-    "emoji": "🫒",
-    "category": "FOOD"
-  },
-  {
-    "en": "Mushrooms?",
-    "cn": "蘑菇？",
-    "emoji": "🍄",
-    "category": "FOOD"
-  },
-  {
-    "en": "Blue Cheese?",
-    "cn": "蓝纹奶酪？",
-    "emoji": "🧀",
-    "category": "FOOD"
-  },
-  {
-    "en": "Wine: Red or White?",
-    "cn": "葡萄酒：红还是白？",
-    "emoji": "🍷",
-    "category": "FOOD"
-  },
-  {
-    "en": "Beer: IPA or Lager?",
-    "cn": "啤酒：IPA 还是拉格？",
-    "emoji": "🍺",
-    "category": "FOOD"
-  },
-  {
-    "en": "Whiskey or Vodka?",
-    "cn": "威士忌还是伏特加？",
-    "emoji": "🥃",
-    "category": "FOOD"
-  },
-  {
-    "en": "Cocktail or Mocktail?",
-    "cn": "鸡尾酒还是无酒精鸡尾酒？",
-    "emoji": "🍸",
-    "category": "FOOD"
-  },
-  {
-    "en": "Water: Sparkling or Still?",
-    "cn": "水：气泡水还是静水？",
-    "emoji": "💧",
-    "category": "FOOD"
-  },
-  {
-    "en": "Soda: Coke or Pepsi?",
-    "cn": "汽水：可乐还是百事？",
-    "emoji": "🥤",
-    "category": "FOOD"
-  },
-  {
-    "en": "Milkshake flavor?",
-    "cn": "奶昔口味？",
-    "emoji": "🥤",
-    "category": "FOOD"
-  },
-  {
-    "en": "Donut: Glazed or Filled?",
-    "cn": "甜甜圈：糖霜还是夹心？",
-    "emoji": "🍩",
-    "category": "FOOD"
-  },
-  {
-    "en": "Croissant or Bagel?",
-    "cn": "羊角包还是贝果？",
-    "emoji": "🥐",
-    "category": "FOOD"
-  },
-  {
-    "en": "Macarons?",
-    "cn": "马卡龙？",
-    "emoji": "🍬",
-    "category": "FOOD"
-  },
-  {
-    "en": "Cheesecake or Tiramisu?",
-    "cn": "芝士蛋糕还是提拉米苏？",
-    "emoji": "🍰",
-    "category": "FOOD"
-  },
-  {
-    "en": "Cookie: Chewy or Crunchy?",
-    "cn": "曲奇：软的还是脆的？",
-    "emoji": "🍪",
-    "category": "FOOD"
-  },
-  {
-    "en": "Chocolate: Dark or Milk?",
-    "cn": "巧克力：黑巧还是牛奶？",
-    "emoji": "🍫",
-    "category": "FOOD"
-  },
-  {
-    "en": "White Chocolate?",
-    "cn": "白巧克力？",
-    "emoji": "🍬",
-    "category": "FOOD"
-  },
-  {
-    "en": "Popcorn: Sweet or Salty?",
-    "cn": "爆米花：甜的还是咸的？",
-    "emoji": "🍿",
-    "category": "FOOD"
-  },
-  {
-    "en": "Chips: Potato or Corn?",
-    "cn": "薯片还是玉米片？",
-    "emoji": "🥔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Dip: Salsa or Guac?",
-    "cn": "蘸酱：莎莎酱还是牛油果酱？",
-    "emoji": "🥣",
-    "category": "FOOD"
-  },
-  {
-    "en": "Noodles or Rice?",
-    "cn": "面条还是米饭？",
-    "emoji": "🍜",
-    "category": "FOOD"
-  },
-  {
-    "en": "Pasta shape?",
-    "cn": "意面形状？",
-    "emoji": "🍝",
-    "category": "FOOD"
-  },
-  {
-    "en": "Pizza: Thin or Thick crust?",
-    "cn": "披萨：薄底还是厚底？",
-    "emoji": "🍕",
-    "category": "FOOD"
-  },
-  {
-    "en": "Hot Dog topping?",
-    "cn": "热狗配料？",
-    "emoji": "🌭",
-    "category": "FOOD"
-  },
-  {
-    "en": "BBQ style?",
-    "cn": "烧烤风格？",
-    "emoji": "🍖",
-    "category": "FOOD"
-  },
-  {
-    "en": "Seafood lover?",
-    "cn": "海鲜爱好者？",
-    "emoji": "🦐",
-    "category": "FOOD"
-  },
-  {
-    "en": "Oysters?",
-    "cn": "生蚝？",
-    "emoji": "🦪",
-    "category": "FOOD"
-  },
-  {
-    "en": "Crab or Lobster?",
-    "cn": "螃蟹还是龙虾？",
-    "emoji": "🦀",
-    "category": "FOOD"
-  },
-  {
-    "en": "Tuna or Salmon?",
-    "cn": "金枪鱼还是三文鱼？",
-    "emoji": "🐟",
-    "category": "FOOD"
-  },
-  {
-    "en": "Raw fish?",
-    "cn": "生鱼片？",
-    "emoji": "🍱",
-    "category": "FOOD"
-  },
-  {
-    "en": "Curry color?",
-    "cn": "咖喱颜色？",
-    "emoji": "🍛",
-    "category": "FOOD"
-  },
-  {
-    "en": "Tofu: Yay or Nay?",
-    "cn": "豆腐：吃还是不吃？",
-    "emoji": "🧊",
-    "category": "FOOD"
-  },
-  {
-    "en": "Vegan meal?",
-    "cn": "素食餐？",
-    "emoji": "🥗",
-    "category": "FOOD"
-  },
-  {
-    "en": "Gluten free?",
-    "cn": "无麸质？",
-    "emoji": "🌾",
-    "category": "FOOD"
-  },
-  {
-    "en": "Buffet strategy?",
-    "cn": "自助餐策略？",
-    "emoji": "🍽️",
-    "category": "FOOD"
-  },
-  {
-    "en": "Late night snack?",
-    "cn": "深夜零食？",
-    "emoji": "🌙",
-    "category": "FOOD"
-  },
-  {
-    "en": "Favorite cuisine?",
-    "cn": "最喜欢哪国菜？",
-    "emoji": "🌍",
-    "category": "FOOD"
-  },
-  {
-    "en": "Street food?",
-    "cn": "街头小吃？",
-    "emoji": "🍢",
-    "category": "FOOD"
-  },
-  {
-    "en": "Fine dining?",
-    "cn": "高级餐厅？",
-    "emoji": "🥂",
-    "category": "FOOD"
-  },
-  {
-    "en": "Food delivery app?",
-    "cn": "外卖 App？",
-    "emoji": "🛵",
-    "category": "FOOD"
   },
   {
     "en": "Morning routine step 1?",
@@ -2272,18 +2194,6 @@
     "cn": "No Phone 还是 No Computer?",
     "emoji": "🤔",
     "category": "TECH"
-  },
-  {
-    "en": "Eat Only Pizza or Eat Only Burger?",
-    "cn": "Eat Only Pizza 还是 Eat Only Burger?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Drink Only Water or Drink Only Soda?",
-    "cn": "Drink Only Water 还是 Drink Only Soda?",
-    "emoji": "🤔",
-    "category": "FOOD"
   },
   {
     "en": "Lose Taste or Lose Smell?",
@@ -3436,299 +3346,5 @@
     "cn": "Plant 还是 Pet?",
     "emoji": "🤔",
     "category": "LIFE"
-  },
-  {
-    "en": "Water or Coffee?",
-    "cn": "Water 还是 Coffee?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Tea or Juice?",
-    "cn": "Tea 还是 Juice?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Beer or Wine?",
-    "cn": "Beer 还是 Wine?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Whiskey or Gin?",
-    "cn": "Whiskey 还是 Gin?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Vodka or Tequila?",
-    "cn": "Vodka 还是 Tequila?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Rum or Brandy?",
-    "cn": "Rum 还是 Brandy?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Cocktail or Shot?",
-    "cn": "Cocktail 还是 Shot?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Ice or Neat?",
-    "cn": "Ice 还是 Neat?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Straw or Glass?",
-    "cn": "Straw 还是 Glass?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Bottle or Can?",
-    "cn": "Bottle 还是 Can?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Cup or Mug?",
-    "cn": "Cup 还是 Mug?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Plate or Bowl?",
-    "cn": "Plate 还是 Bowl?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Fork or Spoon?",
-    "cn": "Fork 还是 Spoon?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Knife or Chopsticks?",
-    "cn": "Knife 还是 Chopsticks?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Napkin or Tissue?",
-    "cn": "Napkin 还是 Tissue?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Table or Booth?",
-    "cn": "Table 还是 Booth?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Bar or Kitchen?",
-    "cn": "Bar 还是 Kitchen?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Restaurant or Cafe?",
-    "cn": "Restaurant 还是 Cafe?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Diner or Bistro?",
-    "cn": "Diner 还是 Bistro?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Pub or Club?",
-    "cn": "Pub 还是 Club?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Bakery or Butcher?",
-    "cn": "Bakery 还是 Butcher?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Market or Grocery?",
-    "cn": "Market 还是 Grocery?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Fresh or Frozen?",
-    "cn": "Fresh 还是 Frozen?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Organic or Gmo?",
-    "cn": "Organic 还是 Gmo?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Local or Imported?",
-    "cn": "Local 还是 Imported?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Homemade or Processed?",
-    "cn": "Homemade 还是 Processed?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Healthy or Junk?",
-    "cn": "Healthy 还是 Junk?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Salad or Burger?",
-    "cn": "Salad 还是 Burger?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Soup or Sandwich?",
-    "cn": "Soup 还是 Sandwich?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Steak or Fish?",
-    "cn": "Steak 还是 Fish?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Chicken or Pork?",
-    "cn": "Chicken 还是 Pork?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Beef or Lamb?",
-    "cn": "Beef 还是 Lamb?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Duck or Turkey?",
-    "cn": "Duck 还是 Turkey?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Rice or Bread?",
-    "cn": "Rice 还是 Bread?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Potato or Pasta?",
-    "cn": "Potato 还是 Pasta?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Corn or Beans?",
-    "cn": "Corn 还是 Beans?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Carrot or Peas?",
-    "cn": "Carrot 还是 Peas?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Onion or Garlic?",
-    "cn": "Onion 还是 Garlic?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Salt or Pepper?",
-    "cn": "Salt 还是 Pepper?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Sugar or Spice?",
-    "cn": "Sugar 还是 Spice?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Oil or Butter?",
-    "cn": "Oil 还是 Butter?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Cheese or Yogurt?",
-    "cn": "Cheese 还是 Yogurt?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Milk or Cream?",
-    "cn": "Milk 还是 Cream?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Egg or Tofu?",
-    "cn": "Egg 还是 Tofu?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Nut or Fruit?",
-    "cn": "Nut 还是 Fruit?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Berry or Melon?",
-    "cn": "Berry 还是 Melon?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Apple or Orange?",
-    "cn": "Apple 还是 Orange?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Banana or Grape?",
-    "cn": "Banana 还是 Grape?",
-    "emoji": "🤔",
-    "category": "FOOD"
-  },
-  {
-    "en": "Lemon or Lime?",
-    "cn": "Lemon 还是 Lime?",
-    "emoji": "🤔",
-    "category": "FOOD"
   }
 ]
