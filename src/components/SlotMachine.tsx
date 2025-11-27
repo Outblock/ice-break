@@ -8,10 +8,14 @@ interface Question {
   en: string;
   cn: string;
   emoji: string;
+  category?: string;
 }
+
+const CATEGORIES = ['ALL', 'FUN', 'TECH', 'DEEP', 'LIFE', 'FOOD'];
 
 const SlotMachine = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>(['ALL']);
   const [isSpinning, setIsSpinning] = useState(false);
   const [spinBtnText, setSpinBtnText] = useState('SPIN THE REEL');
   const [card1Data, setCard1Data] = useState({
@@ -57,7 +61,43 @@ const SlotMachine = () => {
 
   const getRandomQuestion = () => {
     if (questions.length === 0) return { en: 'Loading...', cn: '加载中...', emoji: '⌛' };
-    return questions[Math.floor(Math.random() * questions.length)];
+
+    let filteredQuestions = questions;
+    if (!selectedCategories.includes('ALL')) {
+      filteredQuestions = questions.filter(q => q.category && selectedCategories.includes(q.category));
+    }
+
+    // Fallback if filtering results in no questions (shouldn't happen with correct logic but safe to have)
+    if (filteredQuestions.length === 0) {
+      filteredQuestions = questions;
+    }
+
+    return filteredQuestions[Math.floor(Math.random() * filteredQuestions.length)];
+  };
+
+  const toggleCategory = (cat: string) => {
+    if (isSpinning) return;
+
+    soundManager.playTick(); // Use tick sound for button press
+
+    setSelectedCategories(prev => {
+      if (cat === 'ALL') {
+        return ['ALL'];
+      }
+
+      let newCats = prev.filter(c => c !== 'ALL');
+      if (prev.includes(cat)) {
+        newCats = newCats.filter(c => c !== cat);
+      } else {
+        newCats.push(cat);
+      }
+
+      if (newCats.length === 0) {
+        return ['ALL'];
+      }
+
+      return newCats;
+    });
   };
 
   const updateCardContent = (card: 'card1' | 'card2', data: typeof questions[0]) => {
@@ -191,6 +231,40 @@ const SlotMachine = () => {
           <div className="corner bl"></div><div className="corner br"></div>
 
           <h1><span style={{color:'var(--neon-green)'}}>&gt;</span> PIXEL.SPIN_ENGINE<span className="blink">_</span></h1>
+
+          <div className="category-filters" style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '8px',
+            flexWrap: 'wrap',
+            marginBottom: '20px',
+            maxWidth: '100%'
+          }}>
+            {CATEGORIES.map(cat => (
+              <button
+                key={cat}
+                onClick={() => toggleCategory(cat)}
+                disabled={isSpinning}
+                style={{
+                  fontFamily: 'var(--font-press-start-2p)',
+                  fontSize: '0.6rem',
+                  padding: '8px 12px',
+                  border: '2px solid #333',
+                  backgroundColor: selectedCategories.includes(cat) ? 'var(--neon-green)' : '#fff',
+                  color: selectedCategories.includes(cat) ? '#000' : '#333',
+                  cursor: isSpinning ? 'not-allowed' : 'pointer',
+                  boxShadow: selectedCategories.includes(cat)
+                    ? 'inset 2px 2px 0px rgba(255,255,255,0.5), inset -2px -2px 0px rgba(0,0,0,0.2)'
+                    : '4px 4px 0px #333',
+                  transform: selectedCategories.includes(cat) ? 'translate(2px, 2px)' : 'none',
+                  transition: 'all 0.1s',
+                  textTransform: 'uppercase'
+                }}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
 
           <div className="question-screen" id="screen" ref={screenRef}>
               <div className="pointer pointer-left" id="pointerLeft" ref={pointerLeftRef}></div>
