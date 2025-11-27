@@ -23,9 +23,11 @@ const CATEGORY_OPTIONS = [
 
 const SlotMachine = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
-  const [selectedCategories, setSelectedCategories] = useState<string[]>(['ALL']);
+  // Change default to exclude DEEP
+  const [selectedCategories, setSelectedCategories] = useState<string[]>(['FUN', 'TECH', 'LIFE', 'FOOD']);
   const [isSpinning, setIsSpinning] = useState(false);
   const [spinBtnText, setSpinBtnText] = useState('SPIN THE REEL');
+  const [isMuted, setIsMuted] = useState(false);
   const [card1Data, setCard1Data] = useState({
     en: 'READY?',
     cn: '点击按钮启动',
@@ -61,6 +63,8 @@ const SlotMachine = () => {
     activeCardRef.current = card1Ref.current;
     nextCardRef.current = card2Ref.current;
 
+    setIsMuted(soundManager.getMuted());
+
     fetch('/questions.json')
       .then((res) => res.json())
       .then((data) => setQuestions(data))
@@ -86,26 +90,72 @@ const SlotMachine = () => {
   const toggleCategory = (value: string) => {
     if (isSpinning) return;
 
+    soundManager.resume(); // Ensure audio context is unlocked
     soundManager.playTick(); // Use tick sound for interaction
 
     setSelectedCategories(prev => {
+      // If user selects ALL, verify if we should just clear specific selections or select all
       if (value === 'ALL') {
+        // If clicking ALL, let's switch to ALL mode
         return ['ALL'];
       }
 
-      let newCats = prev.filter(c => c !== 'ALL');
-      if (prev.includes(value)) {
+      // If currently ALL is selected, convert to specific selections minus the clicked one?
+      // Or if ALL is selected, and user clicks FUN, should we deselect FUN (from ALL) or switch to just FUN?
+      // Standard behavior: if ALL is selected, clicking a specific category usually means "switch to specific selection".
+
+      let newCats: string[] = [];
+      if (prev.includes('ALL')) {
+         // If we are in ALL mode, and user clicks a category, we might want to toggle that specific category.
+         // But "ALL" implies everything is selected.
+         // If I click "FUN" while "ALL" is selected, typically it might mean "only FUN" or "everything but FUN".
+         // Given the UI is a multi-select, maybe it's better to treat ALL as a "reset" or "select all".
+         // Let's adopt this logic:
+         // If ALL is present, and we click a category, we treat it as starting a specific selection with that category OR removing it from ALL?
+         // Let's assume the user wants to filter. So if ALL is selected, and they click FUN, maybe they want JUST FUN?
+         // OR maybe they want to deselect FUN from ALL?
+         // Let's stick to the previous logic but handle the transition from ALL better.
+
+         // Previous logic:
+         // let newCats = prev.filter(c => c !== 'ALL');
+         // if (prev.includes(value)) ...
+
+         // If prev was ['ALL'], prev.includes(value) is false.
+         // So it pushes value. Result: [value]. This means clicking 'FUN' switches from 'ALL' to 'FUN'.
+         // This seems correct for a filter: "Show me FUN".
+
+         // But what if they want "Everything except DEEP" (which is the new default)?
+         // The user is currently in ['FUN', 'TECH', ...].
+         // If they click 'ALL', it resets to ['ALL'].
+
+         newCats = prev.filter(c => c !== 'ALL');
+      } else {
+         newCats = [...prev];
+      }
+
+      if (newCats.includes(value)) {
         newCats = newCats.filter(c => c !== value);
       } else {
         newCats.push(value);
       }
 
+      // If no categories selected, default back to ALL? Or allow empty?
+      // Previous code defaulted to ALL.
       if (newCats.length === 0) {
         return ['ALL'];
       }
 
       return newCats;
     });
+  };
+
+  const toggleMute = () => {
+    soundManager.resume(); // Ensure audio context is unlocked
+    const muted = soundManager.toggleMute();
+    setIsMuted(muted);
+    if (!muted) {
+        soundManager.playTick();
+    }
   };
 
   const updateCardContent = (card: 'card1' | 'card2', data: typeof questions[0]) => {
@@ -239,6 +289,24 @@ const SlotMachine = () => {
           <div className="corner bl"></div><div className="corner br"></div>
 
           <h1><span style={{color:'var(--neon-green)'}}>&gt;</span> PIXEL.SPIN_ENGINE<span className="blink">_</span></h1>
+
+          {/* Mute Button */}
+          <button
+            onClick={toggleMute}
+            className="btn-pixel"
+            style={{
+              position: 'absolute',
+              top: '2rem',
+              left: '2rem',
+              padding: '8px 12px',
+              fontSize: '0.8rem',
+              width: 'auto',
+              minWidth: 'auto',
+              zIndex: 50
+            }}
+          >
+            {isMuted ? '🔇' : '🔊'}
+          </button>
 
           <PixelDropdown
             options={CATEGORY_OPTIONS}
