@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import StarsBackground from './StarsBackground';
+import { soundManager } from '../utils/audio';
 
 const questions = [
     { en: "What's the weirdest food combination you enjoy?", cn: "你喜欢哪种最奇怪的食物搭配？", emoji: "🍕" },
@@ -76,6 +77,8 @@ const SlotMachine = () => {
 
   const initSpin = () => {
     if (isSpinning) return;
+    soundManager.resume();
+    soundManager.playSpinStart();
     setIsSpinning(true);
     setSpinBtnText('ACCELERATING...');
 
@@ -134,6 +137,7 @@ const SlotMachine = () => {
 
     if (currentOffset.current >= 100) {
       currentOffset.current -= 100;
+      soundManager.playTick();
 
       const temp = activeCardRef.current;
       activeCardRef.current = nextCardRef.current;
@@ -160,6 +164,7 @@ const SlotMachine = () => {
   };
 
   const finalizeStop = () => {
+    soundManager.playWin();
     if (animationId.current) cancelAnimationFrame(animationId.current);
 
     if (activeCardRef.current) activeCardRef.current.style.transform = `translate3d(0, 0%, 0)`;
