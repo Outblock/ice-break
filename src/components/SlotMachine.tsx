@@ -25,6 +25,7 @@ const SlotMachine = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
   // Change default to exclude DEEP
   const [selectedCategories, setSelectedCategories] = useState<string[]>(['FUN', 'TECH', 'LIFE', 'FOOD']);
+  const [isLoaded, setIsLoaded] = useState(false);
   const [isSpinning, setIsSpinning] = useState(false);
   const [spinBtnText, setSpinBtnText] = useState('SPIN THE REEL');
   const [isMuted, setIsMuted] = useState(false);
@@ -65,11 +66,31 @@ const SlotMachine = () => {
 
     setIsMuted(soundManager.getMuted());
 
+    // Load categories from local storage
+    const savedCategories = localStorage.getItem('pixel-spin-categories');
+    if (savedCategories) {
+      try {
+        const parsed = JSON.parse(savedCategories);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setSelectedCategories(parsed);
+        }
+      } catch (e) {
+        console.error('Failed to parse categories from local storage', e);
+      }
+    }
+    setIsLoaded(true);
+
     fetch('/questions.json')
       .then((res) => res.json())
       .then((data) => setQuestions(data))
       .catch((err) => console.error('Failed to load questions:', err));
   }, []);
+
+  useEffect(() => {
+    if (isLoaded) {
+      localStorage.setItem('pixel-spin-categories', JSON.stringify(selectedCategories));
+    }
+  }, [selectedCategories, isLoaded]);
 
   const getRandomQuestion = () => {
     if (questions.length === 0) return { en: 'Loading...', cn: '加载中...', emoji: '⌛' };
@@ -288,7 +309,7 @@ const SlotMachine = () => {
           <div className="corner tl"></div><div className="corner tr"></div>
           <div className="corner bl"></div><div className="corner br"></div>
 
-          <h1><span style={{color:'var(--neon-green)'}}>&gt;</span> PIXEL.SPIN_ENGINE<span className="blink">_</span></h1>
+          <h1><span style={{color:'var(--neon-green)'}}>&gt;</span> SLOT.Q<span className="blink">_</span></h1>
 
           {/* Mute Button */}
           <button

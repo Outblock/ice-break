@@ -19,6 +19,7 @@ interface PixelDropdownProps {
 
 const PixelDropdown = ({ options, selectedValues, onChange, disabled, className, style }: PixelDropdownProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -61,8 +62,10 @@ const PixelDropdown = ({ options, selectedValues, onChange, disabled, className,
       {/* Dropdown Toggle Button */}
       <div
         onClick={toggleDropdown}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
         style={{
-          backgroundColor: '#222', // Dark background
+          backgroundColor: isHovered && !disabled ? '#333' : '#222', // Dark background with hover
           border: '4px solid #000',
           padding: '8px 12px', // Reduced padding
           cursor: disabled ? 'not-allowed' : 'pointer',
