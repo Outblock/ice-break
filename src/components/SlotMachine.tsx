@@ -2,16 +2,28 @@
 
 import { useEffect, useRef, useState } from 'react';
 import StarsBackground from './StarsBackground';
+import PixelDropdown from './PixelDropdown';
 import { soundManager } from '../utils/audio';
 
 interface Question {
   en: string;
   cn: string;
   emoji: string;
+  category?: string;
 }
+
+const CATEGORY_OPTIONS = [
+  { value: 'ALL', label: 'ALL', emoji: '🌟' },
+  { value: 'FUN', label: 'FUN', emoji: '🎉' },
+  { value: 'TECH', label: 'TECH', emoji: '💻' },
+  { value: 'DEEP', label: 'DEEP', emoji: '🧠' },
+  { value: 'LIFE', label: 'LIFE', emoji: '🌱' },
+  { value: 'FOOD', label: 'FOOD', emoji: '🍕' },
+];
 
 const SlotMachine = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>(['ALL']);
   const [isSpinning, setIsSpinning] = useState(false);
   const [spinBtnText, setSpinBtnText] = useState('SPIN THE REEL');
   const [card1Data, setCard1Data] = useState({
@@ -57,7 +69,43 @@ const SlotMachine = () => {
 
   const getRandomQuestion = () => {
     if (questions.length === 0) return { en: 'Loading...', cn: '加载中...', emoji: '⌛' };
-    return questions[Math.floor(Math.random() * questions.length)];
+
+    let filteredQuestions = questions;
+    if (!selectedCategories.includes('ALL')) {
+      filteredQuestions = questions.filter(q => q.category && selectedCategories.includes(q.category));
+    }
+
+    // Fallback if filtering results in no questions (shouldn't happen with correct logic but safe to have)
+    if (filteredQuestions.length === 0) {
+      filteredQuestions = questions;
+    }
+
+    return filteredQuestions[Math.floor(Math.random() * filteredQuestions.length)];
+  };
+
+  const toggleCategory = (value: string) => {
+    if (isSpinning) return;
+
+    soundManager.playTick(); // Use tick sound for interaction
+
+    setSelectedCategories(prev => {
+      if (value === 'ALL') {
+        return ['ALL'];
+      }
+
+      let newCats = prev.filter(c => c !== 'ALL');
+      if (prev.includes(value)) {
+        newCats = newCats.filter(c => c !== value);
+      } else {
+        newCats.push(value);
+      }
+
+      if (newCats.length === 0) {
+        return ['ALL'];
+      }
+
+      return newCats;
+    });
   };
 
   const updateCardContent = (card: 'card1' | 'card2', data: typeof questions[0]) => {
@@ -191,6 +239,20 @@ const SlotMachine = () => {
           <div className="corner bl"></div><div className="corner br"></div>
 
           <h1><span style={{color:'var(--neon-green)'}}>&gt;</span> PIXEL.SPIN_ENGINE<span className="blink">_</span></h1>
+
+          <PixelDropdown
+            options={CATEGORY_OPTIONS}
+            selectedValues={selectedCategories}
+            onChange={toggleCategory}
+            disabled={isSpinning}
+            style={{
+              position: 'absolute',
+              top: '2rem',
+              right: '2rem',
+              width: '120px',
+              zIndex: 50
+            }}
+          />
 
           <div className="question-screen" id="screen" ref={screenRef}>
               <div className="pointer pointer-left" id="pointerLeft" ref={pointerLeftRef}></div>
