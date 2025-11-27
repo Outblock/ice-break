@@ -65,7 +65,7 @@ body {
 .br { bottom: -8px; right: -8px; background: var(--neon-yellow); }
 
 h1 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: var(--font-press-start-2p), cursive;
     font-size: 1.5rem;
     color: var(--neon-yellow);
     text-shadow: 4px 4px 0px #000;
@@ -181,7 +181,7 @@ h1 {
 }
 
 .btn-pixel {
-    font-family: 'Press Start 2P', cursive;
+    font-family: var(--font-press-start-2p), cursive;
     background-color: var(--neon-pink);
     color: #fff;
     border: 4px solid #000;

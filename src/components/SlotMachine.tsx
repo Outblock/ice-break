@@ -4,27 +4,14 @@ import { useEffect, useRef, useState } from 'react';
 import StarsBackground from './StarsBackground';
 import { soundManager } from '../utils/audio';
 
-const questions = [
-    { en: "What's the weirdest food combination you enjoy?", cn: "你喜欢哪种最奇怪的食物搭配？", emoji: "🍕" },
-    { en: "If animals could talk, which would be the rudest?", cn: "如果动物会说话，哪一种会最粗鲁？", emoji: "🦙" },
-    { en: "What’s the most useless talent you have?", cn: "你拥有的最无用的天赋是什么？", emoji: "🤡" },
-    { en: "Pineapple on pizza: Yes or No?", cn: "披萨放菠萝：接受还是拒绝？", emoji: "🍍" },
-    { en: "What are you currently addicted to?", cn: "你最近沉迷于什么？", emoji: "🍬" },
-    { en: "Tabs or Spaces?", cn: "缩进用 Tab 还是 空格？", emoji: "⌨️" },
-    { en: "What app do you use most on your phone?", cn: "你手机上使用频率最高的 App 是哪个？", emoji: "📱" },
-    { en: "If you could automate one part of your life, what would it be?", cn: "如果能自动化你生活的一部分，你会选什么？", emoji: "🤖" },
-    { en: "Mac, Windows, or Linux?", cn: "Mac, Windows 还是 Linux？", emoji: "💻" },
-    { en: "Zombie apocalypse: Weapon of choice?", cn: "僵尸末日来了：你选什么武器？", emoji: "🧟" },
-    { en: "Time Travel: Past or Future?", cn: "穿越时空：去过去还是未来？", emoji: "⏳" },
-    { en: "Teleport anywhere right now?", cn: "现在想瞬移去哪里？", emoji: "🛸" },
-    { en: "Perfect weekend idea?", cn: "你心中完美的周末是怎样的？", emoji: "🏖️" },
-    { en: "Saver or Spender?", cn: "你是存钱党还是剁手党？", emoji: "💸" },
-    { en: "Cat person or Dog person?", cn: "猫派还是狗派？", emoji: "🐱" },
-    { en: "Advice to younger self?", cn: "给年轻的自己一句建议？", emoji: "👶" },
-    { en: "Who is your role model?", cn: "谁是你的榜样？", emoji: "🌟" }
-];
+interface Question {
+  en: string;
+  cn: string;
+  emoji: string;
+}
 
 const SlotMachine = () => {
+  const [questions, setQuestions] = useState<Question[]>([]);
   const [isSpinning, setIsSpinning] = useState(false);
   const [spinBtnText, setSpinBtnText] = useState('SPIN THE REEL');
   const [card1Data, setCard1Data] = useState({
@@ -61,9 +48,15 @@ const SlotMachine = () => {
   useEffect(() => {
     activeCardRef.current = card1Ref.current;
     nextCardRef.current = card2Ref.current;
+
+    fetch('/questions.json')
+      .then((res) => res.json())
+      .then((data) => setQuestions(data))
+      .catch((err) => console.error('Failed to load questions:', err));
   }, []);
 
   const getRandomQuestion = () => {
+    if (questions.length === 0) return { en: 'Loading...', cn: '加载中...', emoji: '⌛' };
     return questions[Math.floor(Math.random() * questions.length)];
   };
 
