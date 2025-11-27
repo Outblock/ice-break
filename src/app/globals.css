@@ -165,11 +165,11 @@ h1 {
 
 .q-en {
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--neon-green);
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     text-shadow: 2px 2px 0 #000;
-    line-height: 1.5;
+    line-height: 1.6;
     max-width: 100%;
     letter-spacing: -1px;
 }
