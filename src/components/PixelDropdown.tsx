@@ -49,10 +49,9 @@ const PixelDropdown = ({ options, selectedValues, onChange, disabled, className,
 
   return (
     <div
-      className={`pixel-dropdown-container ${className || ''}`}
+      className={`pixel-dropdown-container relative ${className || ''}`}
       ref={dropdownRef}
       style={{
-        position: 'relative',
         width: '150px', // Default reduced width
         fontFamily: 'var(--font-press-start-2p)',
         ...style
