@@ -288,39 +288,27 @@ const SlotMachine = () => {
           <div className="corner tl"></div><div className="corner tr"></div>
           <div className="corner bl"></div><div className="corner br"></div>
 
+          {/* Header Controls */}
+          <div className="flex justify-between items-center w-full mb-4 md:mb-0">
+            {/* Mute Button */}
+            <button
+              onClick={toggleMute}
+              className="btn-pixel relative md:absolute md:top-8 md:left-8 z-50 !p-2 !text-xs !w-auto !min-w-0"
+            >
+              {isMuted ? '🔇' : '🔊'}
+            </button>
+
+            <PixelDropdown
+              options={CATEGORY_OPTIONS}
+              selectedValues={selectedCategories}
+              onChange={toggleCategory}
+              disabled={isSpinning}
+              className="md:absolute md:top-8 md:right-8 z-50"
+              style={{ width: '120px' }}
+            />
+          </div>
+
           <h1><span style={{color:'var(--neon-green)'}}>&gt;</span> PIXEL.SPIN_ENGINE<span className="blink">_</span></h1>
-
-          {/* Mute Button */}
-          <button
-            onClick={toggleMute}
-            className="btn-pixel"
-            style={{
-              position: 'absolute',
-              top: '2rem',
-              left: '2rem',
-              padding: '8px 12px',
-              fontSize: '0.8rem',
-              width: 'auto',
-              minWidth: 'auto',
-              zIndex: 50
-            }}
-          >
-            {isMuted ? '🔇' : '🔊'}
-          </button>
-
-          <PixelDropdown
-            options={CATEGORY_OPTIONS}
-            selectedValues={selectedCategories}
-            onChange={toggleCategory}
-            disabled={isSpinning}
-            style={{
-              position: 'absolute',
-              top: '2rem',
-              right: '2rem',
-              width: '120px',
-              zIndex: 50
-            }}
-          />
 
           <div className="question-screen" id="screen" ref={screenRef}>
               <div className="pointer pointer-left" id="pointerLeft" ref={pointerLeftRef}></div>
