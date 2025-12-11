@@ -289,11 +289,11 @@ const SlotMachine = () => {
           <div className="corner bl"></div><div className="corner br"></div>
 
           {/* Header Controls */}
-          <div className="flex justify-between items-center w-full mb-4 md:mb-0">
+          <div className="flex justify-between items-center w-full mb-4 md:absolute md:top-0 md:left-0 md:w-full md:h-16 md:px-8 md:mb-0 z-50">
             {/* Mute Button */}
             <button
               onClick={toggleMute}
-              className="btn-pixel relative md:absolute md:top-8 md:left-8 z-50 !p-2 !text-xs !w-auto !min-w-0"
+              className="btn-pixel relative z-50 !p-2 !text-xs !w-auto !min-w-0"
             >
               {isMuted ? '🔇' : '🔊'}
             </button>
@@ -303,7 +303,7 @@ const SlotMachine = () => {
               selectedValues={selectedCategories}
               onChange={toggleCategory}
               disabled={isSpinning}
-              className="md:absolute md:top-8 md:right-8 z-50"
+              className="z-50"
               style={{ width: '120px' }}
             />
           </div>
